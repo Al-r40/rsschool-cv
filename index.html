@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Curriculum vitae</title>
+</head>
+<body>
+    <header class="header-container">
+        <nav>
+            <ul>
+                <li class="lin"><a href="#Contacts">Contacts</a></li>
+                <li class="lin"><a href="#About_me">About me</a></li>
+                <li class="lin"><a href="#Skills">Skills</a></li>
+                <li class="lin"><a href="#Code_example">Code</a></li>
+                <li class="lin"><a href="#Work_Expearens">Work Expearens</a></li>
+                <li class="lin"><a href="#Education">Education</a></li>
+                <li class="lin_"><a href="#My_level_of_English">English</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <h1>Curriculum vitae</h1>
+            <section id="Contacts">
+                <h2>Contacts</h2>
+                <a href="https://www.gmail.com/" target="_blank" class="cont em">E-mail: a.v.s.1981rf@gmail.com</a><br>
+                <a href="https://discord.com/" target="_blank" class="cont disc">Nickname ov Discord: Al-r40(@Al-r40)</a>
+            </section>
+            <section id="About_me">
+                <h2>About me</h2>
+                <img src="avatar.jpg" alt="">
+                <div class="f">My name is Alexander Semyonov. My aim is to become a programmer. I am ready to work hard and hard.</div>
+            </section>
+            <section id="Skills">
+                <h2>Skills</h2>
+                <table>
+                    <tr>
+                        <td>&#9745; HTML</td>
+                        <td>&#9745; HTML5</td>
+                    </tr>
+                    <tr>
+                        <td>&#9745; CSS</td>
+                        <td>&#9745; CSS3</td>
+                    </tr>
+                    <tr>
+                        <td>&#9745; Java Script Basic</td>
+                        <td>&#9745; Figma</td>
+                    </tr>
+                    <tr>
+                        <td>&#9745; Github</td>
+                        <td>&#9745; Git Basic</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="Code_example">
+                <h2>Code example</h2>                
+                <pre><code>
+            block.addEventListener('click', e => {
+                if (e.target.className = 'third') {
+                    move % 2 === 0 ? e.target.innerHTML = 'x' : e.target.innerHTML = '0';
+                    move++;
+                    audio.play();
+                    check();
+                    }
+                });
+                    
+                let boxes = document.getElementsByClassName('third');
+                    
+            const check = () => {    
+                const arr = [
+                    [0,1,2],
+                    [3,4,5],
+                    [6,7,8],
+                    [0,3,6],
+                    [1,4,7],
+                    [2,5,8],
+                    [0,4,8],
+                    [2,4,6]
+                ];
+                for (i = 0; i &lt; arr.length; i++) {
+                    if ( 
+                        boxes[arr[i][0]].innerHTML == 'x' && boxes[arr[i][1]].innerHTML == 'x' && boxes[arr[i][2]].innerHTML == 'x'
+                        ) {
+                        result = 'Crosses';
+                            prepareResult(result);
+                    }
+                    else if (
+                        boxes[arr[i][0]].innerHTML == '0' && boxes[arr[i][1]].innerHTML == '0' && boxes[arr[i][2]].innerHTML == '0'
+                        ) {
+                            result = 'Zeros';
+                            prepareResult(result);
+                        }
+                }
+            }
+                </code></pre>
+            </section>
+            <section id="Work_Expearens">
+                <h2>Work Expearens</h2>
+                <a href="https://rolling-scopes-school.github.io/al-r40-JSFEPRESCHOOL/js30-1/index.html" class="ed">Eco-sounds</a><br>
+                <a href="https://rolling-scopes-school.github.io/al-r40-JSFEPRESCHOOL/js30-2/index_ru.html" class="ed">Random-quotations</a><br>
+                <a href="https://rolling-scopes-school.github.io/al-r40-JSFEPRESCHOOL/portfolio/" class="ed">Portfolio of a photographer</a>
+            </section>
+            <section id="Education">
+                <h2>Education</h2>
+                <div class="ed">I have a chemistry education. My score is 4.6</div>
+                <div class="ed">I finished course JS/FRONT-END Stage#0</div>
+                <div class="ed">I`m learning JavaScript in&nbsp;<a href="https://learn.javascript.ru/" target="_blank">https://learn.javascript.ru/</a></div>
+            </section>
+            <section id="My_level_of_English">
+                <h2>My level of English</h2>
+                <div class="level">I think it is nearly Pre-Intermediate</div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer-container">
+        
+    </footer>
+</body>
+</html>
