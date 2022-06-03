@@ -4,6 +4,7 @@
 
 * {
     box-sizing: border-box;
+    transition: 0.5s;
 }
 
 html {
@@ -119,6 +120,25 @@ code {
 
 .ed:last-child {
     margin-bottom: 0;
+}
+
+.edi {
+    background-color: rgb(0, 122, 179);
+    height: 100px;
+    width: 95%;
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.edi:hover {
+    background-color: rgb(104, 207, 238);
+    color: rgb(23, 23, 96);
 }
 
 .level {
